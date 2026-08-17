@@ -77,13 +77,6 @@ export default function CoverageSection() {
         <div className="grid grid-cols-1 gap-10 px-6 py-12 md:px-10 md:py-14 lg:grid-cols-12 lg:gap-12 lg:px-12">
           {/* Left: the claim, then accreditation as a quiet ruled list. */}
           <div className="text-center lg:col-span-5 lg:text-left">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-2 font-label-md text-label-md uppercase tracking-widest text-white">
-              <span className="material-symbols-outlined text-base text-secondary-fixed-dim">
-                map
-              </span>
-              Coverage &amp; Insurance
-            </p>
-
             <h2 className="font-display-lg text-[clamp(1.85rem,3.2vw,2.6rem)] font-bold leading-[1.03] tracking-[-0.03em] text-white">
               Coverage &amp; Insurance
             </h2>

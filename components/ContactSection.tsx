@@ -120,13 +120,6 @@ export default function ContactSection() {
       className="mx-auto max-w-container-max scroll-mt-24 px-margin-mobile py-section-gap md:px-margin-desktop"
     >
       <div className="mx-auto mb-10 max-w-3xl text-center">
-        <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-outline-variant bg-surface-container-low px-3.5 py-2 font-label-md text-label-md uppercase tracking-widest text-primary">
-          <span className="material-symbols-outlined text-base text-secondary">
-            event_available
-          </span>
-          Book a consultation
-        </p>
-
         <h2 className="font-display-lg text-[clamp(2.25rem,4.4vw,3.5rem)] font-bold leading-[1.04] tracking-[-0.03em] text-primary">
           Book Your Free Consultation
         </h2>

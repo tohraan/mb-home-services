@@ -114,14 +114,7 @@ export default function CareProcessSection() {
           <div className="mx-auto w-full max-w-container-max px-margin-mobile py-8 md:px-margin-desktop">
             {/* Locked heading: lives inside the pinned frame so it stays in
                 view for the whole interaction. */}
-            <div className="mx-auto mb-8 max-w-3xl text-center lg:mb-10">
-              <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-outline-variant bg-surface-container-low px-3.5 py-2 font-label-md text-label-md uppercase tracking-widest text-primary">
-                <span className="material-symbols-outlined text-base text-secondary">
-                  route
-                </span>
-                How It Works
-              </p>
-              <h2 className="font-display-lg text-[clamp(2rem,3.6vw,3rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
+            <div className="mx-auto mb-8 max-w-3xl text-center lg:mb-10">              <h2 className="font-display-lg text-[clamp(2rem,3.6vw,3rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
                 The Care Process
               </h2>
             </div>

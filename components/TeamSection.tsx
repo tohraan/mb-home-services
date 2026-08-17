@@ -44,13 +44,6 @@ export default function TeamSection() {
       className="w-full px-margin-mobile py-section-gap md:px-margin-desktop"
     >
       <div className="mx-auto mb-10 max-w-2xl text-center">
-        <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-outline-variant bg-surface-container-low px-3.5 py-2 font-label-md text-label-md uppercase tracking-widest text-primary">
-          <span className="material-symbols-outlined text-base text-secondary">
-            diversity_1
-          </span>
-          Our Team
-        </p>
-
         <h2 className="font-display-lg text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
           Our Family
         </h2>
