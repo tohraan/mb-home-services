@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="mx-auto max-w-container-max px-margin-mobile pb-section-gap pt-4 md:px-margin-desktop"
+      className="mx-auto max-w-container-max px-margin-mobile pb-14 pt-4 md:px-margin-desktop md:pb-section-gap"
     >
       <div className="mx-auto mb-10 max-w-3xl text-center">
         <p className="mb-5 font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
@@ -147,7 +147,7 @@ export default function TestimonialsSection() {
             <article
               key={review.name}
               aria-hidden={index !== active}
-              className={`col-start-1 row-start-1 rounded-[28px] border border-outline-variant/60 bg-surface-container-lowest p-6 shadow-[0_10px_30px_rgba(0,32,70,0.05)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:p-7 ${
+              className={`col-start-1 row-start-1 rounded-[28px] border border-outline-variant/60 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(0,32,70,0.05)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:p-7 ${
                 index === active
                   ? "translate-y-0 opacity-100"
                   : "pointer-events-none translate-y-2 opacity-0"

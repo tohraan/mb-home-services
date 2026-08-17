@@ -61,7 +61,7 @@ export default function ConsultationForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-3xl bg-surface-container-lowest p-8 shadow-[0_24px_70px_rgba(0,32,70,0.28)] ring-1 ring-white/50"
+      className="rounded-3xl bg-surface-container-lowest p-6 shadow-[0_24px_70px_rgba(0,32,70,0.28)] ring-1 ring-white/50 md:p-8"
     >
       <div className="mb-7">
         <h2 className="font-headline-md text-[25px] font-semibold text-primary">
@@ -73,7 +73,7 @@ export default function ConsultationForm() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-x-5 gap-y-7 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-5 gap-y-6 sm:grid-cols-2">
         <Field id="cf-name" label="Your name">
           <input
             id="cf-name"

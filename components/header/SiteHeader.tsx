@@ -31,8 +31,8 @@ export default function SiteHeader() {
 
           {/* Copy hard left, form hard right — edge-aligned rather than boxed
               into a centred container. */}
-          <div className="relative z-10 flex w-full flex-1 items-center px-7 pb-14 pt-28 md:px-10 lg:min-h-0 lg:px-14 lg:pb-10 lg:pt-24">
-            <div className="flex w-full flex-col items-stretch gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
+          <div className="relative z-10 flex w-full flex-1 items-center px-6 pb-10 pt-24 md:px-10 lg:min-h-0 lg:px-14 lg:pb-10 lg:pt-24">
+            <div className="flex w-full flex-col items-stretch gap-9 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
               <div className="w-full lg:max-w-[44%]">
                 <HeaderCopy />
               </div>

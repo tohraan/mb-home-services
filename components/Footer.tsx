@@ -34,9 +34,9 @@ export default function Footer() {
   return (
     <footer className="w-full px-3 pb-3 md:px-4 md:pb-4">
       <div className="mx-auto w-full max-w-[1720px] overflow-hidden rounded-[28px] bg-primary text-on-primary">
-        <div className="px-7 pt-14 md:px-12 md:pt-16 lg:px-16">
+        <div className="px-6 pt-10 md:px-12 md:pt-16 lg:px-16">
           {/* Call to action band */}
-          <div className="flex flex-col items-start justify-between gap-6 border-b border-white/12 pb-12 lg:flex-row lg:items-center">
+          <div className="flex flex-col items-start justify-between gap-6 border-b border-white/12 pb-9 lg:flex-row lg:pb-12 lg:items-center">
             <div>
               <h2 className="font-display-lg text-[clamp(1.75rem,3vw,2.5rem)] font-bold leading-[1.05] tracking-[-0.03em]">
                 Care can start this week.
@@ -70,16 +70,17 @@ export default function Footer() {
           </div>
 
           {/* Link columns */}
-          <div className="grid grid-cols-1 gap-10 py-12 md:grid-cols-12 md:gap-8">
+          <div className="grid grid-cols-1 gap-9 py-10 md:grid-cols-12 md:gap-8 md:py-12">
             <div className="md:col-span-4">
-              <span className="flex items-center gap-2 font-headline-md text-[19px] font-bold">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  medical_services
-                </span>
-                MB Home Services
+              <span className="inline-flex rounded-2xl bg-white px-4 py-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/mb-logo.webp"
+                  alt="MB Home Health Care"
+                  width={235}
+                  height={120}
+                  className="h-11 w-auto"
+                />
               </span>
               <p className="mt-4 max-w-xs font-body-md text-[15px] leading-relaxed text-white/65">
                 Skilled nursing, therapy and daily support delivered at home

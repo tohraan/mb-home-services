@@ -90,9 +90,9 @@ export default function ServicesSection() {
   return (
     <section
       id="how-we-help"
-      className="mx-auto max-w-container-max px-margin-mobile py-section-gap md:px-margin-desktop"
+      className="mx-auto max-w-container-max px-margin-mobile py-14 md:px-margin-desktop md:py-section-gap"
     >
-      <div className="mx-auto mb-10 max-w-3xl text-center">
+      <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
         <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-outline-variant bg-surface-container-low px-3.5 py-2 font-label-md text-label-md uppercase tracking-widest text-primary">
           <span className="material-symbols-outlined text-base text-secondary">
             groups
@@ -181,7 +181,7 @@ export default function ServicesSection() {
               </div>
 
               <div
-                className={`flex min-w-0 flex-1 flex-col p-7 transition-opacity duration-300 md:p-9 ${
+                className={`flex min-w-0 flex-1 flex-col p-5 transition-opacity duration-300 md:p-9 ${
                   isCollapsed
                     ? "md:pointer-events-none md:opacity-0"
                     : "opacity-100 md:delay-100"

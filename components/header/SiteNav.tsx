@@ -82,22 +82,16 @@ export default function SiteNav() {
             : "rounded-full border-transparent px-4 py-2 shadow-[0_10px_30px_rgba(0,32,70,0.18)]"
         } ${menuOpen ? "rounded-b-none" : ""}`}
       >
-        <a
-          className="flex shrink-0 items-center gap-2 text-primary"
-          href="#header"
-        >
-          <span
-            className="material-symbols-outlined text-2xl"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            medical_services
-          </span>
-          <span className="hidden whitespace-nowrap text-base font-bold sm:block">
-            {BRAND_NAME}
-          </span>
+        <a className="flex shrink-0 items-center" href="#header">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/mb-logo.webp"
+            alt={BRAND_NAME}
+            width={235}
+            height={120}
+            className={`w-auto ${MORPH} ${docked ? "h-9" : "h-9 md:h-10"}`}
+          />
         </a>
-
-        <span className="mx-3 hidden h-6 w-px bg-primary/15 lg:block" />
 
         {/* Spacers keep the link group optically centred once the bar is
             docked and spans the full viewport. */}

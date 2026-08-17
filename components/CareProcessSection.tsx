@@ -111,7 +111,7 @@ export default function CareProcessSection() {
         className="relative"
       >
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-          <div className="mx-auto w-full max-w-container-max px-margin-mobile py-6 md:px-margin-desktop">
+          <div className="mx-auto w-full max-w-container-max px-margin-mobile py-5 md:px-margin-desktop md:py-6">
             {/* Locked heading: lives inside the pinned frame so it stays in
                 view for the whole interaction. */}
             <div className="mx-auto mb-7 max-w-3xl text-center lg:mb-8">              <h2 className="font-display-lg text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
@@ -169,7 +169,7 @@ export default function CareProcessSection() {
 
                     {/* Description lives in its own content box, CTA anchored
                         to its bottom-right corner. */}
-                    <div className="mt-6 rounded-[24px] border border-outline-variant/60 bg-surface-container-lowest p-6 shadow-[0_10px_30px_rgba(0,32,70,0.05)] md:p-7">
+                    <div className="mt-5 rounded-[24px] border border-outline-variant/60 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(0,32,70,0.05)] md:p-7">
                       <p className="font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
                         {step.description}
                       </p>

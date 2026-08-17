@@ -41,9 +41,9 @@ export default function TeamSection() {
   return (
     <section
       id="team"
-      className="w-full px-margin-mobile pb-4 pt-section-gap md:px-margin-desktop"
+      className="w-full px-margin-mobile pb-4 pt-14 md:px-margin-desktop md:pt-section-gap"
     >
-      <div className="mx-auto mb-10 max-w-2xl text-center">
+      <div className="mx-auto mb-8 max-w-2xl text-center md:mb-10">
         <h2 className="font-display-lg text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
           Our Family
         </h2>

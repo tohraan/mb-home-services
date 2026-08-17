@@ -117,7 +117,7 @@ export default function ContactSection() {
   return (
     <section
       id="book"
-      className="mx-auto max-w-container-max scroll-mt-24 px-margin-mobile py-section-gap md:px-margin-desktop"
+      className="mx-auto max-w-container-max scroll-mt-24 px-margin-mobile py-14 md:px-margin-desktop md:py-section-gap"
     >
       <div className="mx-auto mb-10 max-w-3xl text-center">
         <h2 className="font-display-lg text-[clamp(2.25rem,4.4vw,3.5rem)] font-bold leading-[1.04] tracking-[-0.03em] text-primary">
@@ -133,7 +133,7 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
         {/* Contact details */}
         <aside className="lg:col-span-4">
-          <div className="rounded-[28px] bg-primary p-7 text-on-primary md:p-8">
+          <div className="rounded-[28px] bg-primary p-6 text-on-primary md:p-8">
             <h3 className="font-headline-md text-[20px] font-semibold">
               Prefer to talk?
             </h3>
@@ -203,7 +203,7 @@ export default function ContactSection() {
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="space-y-8 rounded-[28px] border border-outline-variant/60 bg-surface-container-lowest p-7 shadow-[0_10px_30px_rgba(0,32,70,0.05)] md:p-9"
+              className="space-y-8 rounded-[28px] border border-outline-variant/60 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(0,32,70,0.05)] md:p-9"
             >
               <Group step="1" title="Your details">
                 <Field id="bk-name" label="Your name">
