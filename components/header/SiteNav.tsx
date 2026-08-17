@@ -66,20 +66,38 @@ export default function SiteNav() {
   }, [menuOpen]);
 
   const shellWidth = docked && viewport ? `${viewport}px` : "980px";
+  /**
+   * On phones the undocked pill hugs its contents instead of stretching to a
+   * fixed max-width — a full-width pill there is mostly empty white space.
+   * The max-width morph is desktop-only for the same reason.
+   */
+  const isPhone = viewport > 0 && viewport < 768;
+  /**
+   * Phones keep the compact pill at every scroll position. Docking into a
+   * full-width bar there costs vertical space and forces an un-interpolatable
+   * width change (fit-content -> 100%) that snaps mid-transition.
+   */
+  const barDocked = docked && !isPhone;
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 ${MORPH} ${
-        docked ? "pt-0" : "pt-7"
+        barDocked ? "pt-0" : "pt-3 md:pt-7"
       }`}
       id="site-nav"
     >
       <div
-        style={{ maxWidth: shellWidth }}
-        className={`mx-auto flex w-full items-center gap-1 border-b border-solid bg-white ${MORPH} ${
-          docked
+        style={{ maxWidth: isPhone ? undefined : shellWidth }}
+        className={`mx-auto flex items-center gap-1 border-b border-solid bg-white ${MORPH} ${
+          barDocked
+            ? "w-full"
+            : menuOpen
+              ? "w-[min(20rem,calc(100vw-1.5rem))] md:w-full"
+              : "w-fit md:w-full"
+        } ${
+          barDocked
             ? "rounded-none border-outline-variant/60 px-margin-mobile py-3 shadow-[0_2px_20px_rgba(0,32,70,0.08)] md:px-margin-desktop"
-            : "rounded-full border-transparent px-4 py-2 shadow-[0_10px_30px_rgba(0,32,70,0.18)]"
+            : "rounded-full border-transparent px-3 py-1.5 shadow-[0_10px_30px_rgba(0,32,70,0.18)] md:px-4 md:py-2"
         } ${menuOpen ? "rounded-b-none" : ""}`}
       >
         <a className="flex shrink-0 items-center" href="#header">
@@ -89,7 +107,7 @@ export default function SiteNav() {
             alt={BRAND_NAME}
             width={235}
             height={120}
-            className={`w-auto ${MORPH} ${docked ? "h-9" : "h-9 md:h-10"}`}
+            className={`w-auto ${MORPH} ${barDocked ? "h-9" : "h-8 md:h-10"}`}
           />
         </a>
 
@@ -114,7 +132,7 @@ export default function SiteNav() {
 
         <a
           className={`ml-auto hidden shrink-0 items-center gap-2 bg-primary px-5 py-2.5 font-label-md text-label-md text-on-primary shadow-md ${MORPH} hover:bg-secondary md:flex ${
-            docked ? "rounded-lg" : "rounded-full"
+            barDocked ? "rounded-lg" : "rounded-full"
           }`}
           href={PHONE_HREF}
         >
@@ -126,9 +144,9 @@ export default function SiteNav() {
         <a
           href={PHONE_HREF}
           aria-label={`Call ${PHONE}`}
-          className="ml-auto flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary md:hidden"
+          className="ml-3 flex size-9 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary md:hidden"
         >
-          <span className="material-symbols-outlined text-lg">call</span>
+          <span className="material-symbols-outlined text-base">call</span>
         </a>
 
         <button
@@ -137,9 +155,9 @@ export default function SiteNav() {
           aria-expanded={menuOpen}
           aria-controls="site-nav-menu"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
-          className="ml-2 flex size-10 shrink-0 items-center justify-center rounded-full border border-outline-variant text-primary transition-colors hover:bg-primary/5 md:hidden"
+          className="ml-1.5 flex size-9 shrink-0 items-center justify-center rounded-full border border-outline-variant text-primary transition-colors hover:bg-primary/5 md:hidden"
         >
-          <span className="material-symbols-outlined text-xl">
+          <span className="material-symbols-outlined text-lg">
             {menuOpen ? "close" : "menu"}
           </span>
         </button>
@@ -148,10 +166,8 @@ export default function SiteNav() {
       {/* Mobile menu panel */}
       <div
         id="site-nav-menu"
-        style={{ maxWidth: shellWidth }}
-        className={`mx-auto overflow-hidden bg-white transition-[max-height,opacity] duration-300 ease-out md:hidden ${
-          docked ? "rounded-b-none" : "rounded-b-3xl"
-        } ${
+        style={{ maxWidth: isPhone ? undefined : shellWidth }}
+        className={`mx-auto w-[min(20rem,calc(100vw-1.5rem))] overflow-hidden rounded-b-3xl bg-white transition-[max-height,opacity] duration-300 ease-out md:hidden ${
           menuOpen
             ? "max-h-96 border-b border-outline-variant/60 opacity-100 shadow-[0_10px_30px_rgba(0,32,70,0.12)]"
             : "pointer-events-none max-h-0 opacity-0"
