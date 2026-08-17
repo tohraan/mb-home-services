@@ -41,7 +41,7 @@ export default function TeamSection() {
   return (
     <section
       id="team"
-      className="w-full px-margin-mobile py-section-gap md:px-margin-desktop"
+      className="w-full px-margin-mobile pb-4 pt-section-gap md:px-margin-desktop"
     >
       <div className="mx-auto mb-10 max-w-2xl text-center">
         <h2 className="font-display-lg text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">

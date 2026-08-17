@@ -111,10 +111,10 @@ export default function CareProcessSection() {
         className="relative"
       >
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-          <div className="mx-auto w-full max-w-container-max px-margin-mobile py-8 md:px-margin-desktop">
+          <div className="mx-auto w-full max-w-container-max px-margin-mobile py-6 md:px-margin-desktop">
             {/* Locked heading: lives inside the pinned frame so it stays in
                 view for the whole interaction. */}
-            <div className="mx-auto mb-8 max-w-3xl text-center lg:mb-10">              <h2 className="font-display-lg text-[clamp(2rem,3.6vw,3rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
+            <div className="mx-auto mb-7 max-w-3xl text-center lg:mb-8">              <h2 className="font-display-lg text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-primary">
                 The Care Process
               </h2>
             </div>
@@ -136,7 +136,7 @@ export default function CareProcessSection() {
                         src={step.image}
                         alt={`${step.title} — MB Home Services care process`}
                         loading={index === 0 ? "eager" : "lazy"}
-                        className="h-[280px] w-full object-cover md:h-[380px] lg:h-[440px]"
+                        className="h-[300px] w-full object-cover md:h-[440px] lg:h-[560px]"
                       />
                       <span className="absolute left-6 top-6 rounded-full bg-white/90 px-4 py-2 font-label-md text-label-md font-semibold uppercase tracking-widest text-primary backdrop-blur-sm">
                         {step.meta}

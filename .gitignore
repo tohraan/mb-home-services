@@ -11,3 +11,4 @@ next-env.d.ts
 # the optimised WebP derivatives live in public/ and are what the site serves.
 header-scroll/
 screenshots/
+.vercel

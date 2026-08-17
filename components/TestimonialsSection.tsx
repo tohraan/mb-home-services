@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="mx-auto max-w-container-max px-margin-mobile py-section-gap md:px-margin-desktop"
+      className="mx-auto max-w-container-max px-margin-mobile pb-section-gap pt-4 md:px-margin-desktop"
     >
       <div className="mx-auto mb-10 max-w-3xl text-center">
         <p className="mb-5 font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
