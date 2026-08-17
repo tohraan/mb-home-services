@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.DS_Store
+*.pem
+npm-debug.log*
+.env*.local
+next-env.d.ts
+
+# Source frames for the header/services/coverage imagery. Build input only —
+# the optimised WebP derivatives live in public/ and are what the site serves.
+header-scroll/
+screenshots/

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MB Home Health Care</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#004d62",
+                        "surface-bright": "#f8f9ff",
+                        "on-primary-fixed": "#001b3d",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e5eeff",
+                        "surface-container-low": "#eff4ff",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#e0e3e5",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "background": "#f8f9ff",
+                        "inverse-primary": "#aec7f6",
+                        "primary-fixed-dim": "#aec7f6",
+                        "on-secondary-fixed": "#001f29",
+                        "primary-container": "#002046",
+                        "outline-variant": "#c4c6cf",
+                        "on-surface-variant": "#44474e",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#09657f",
+                        "tertiary-container": "#1e2123",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#85888a",
+                        "surface-variant": "#d3e4fe",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-fixed": "#191c1e",
+                        "secondary-container": "#9ae1ff",
+                        "secondary-fixed": "#baeaff",
+                        "tertiary": "#070a0b",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "surface-tint": "#465f88",
+                        "primary": "#00091b",
+                        "outline": "#74777f",
+                        "inverse-surface": "#213145",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-fixed-dim": "#89d0ed",
+                        "surface-dim": "#cbdbf5",
+                        "on-primary-container": "#7089b4",
+                        "on-background": "#0b1c30",
+                        "surface-container-high": "#dce9ff",
+                        "surface": "#f8f9ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "secondary": "#0c6780",
+                        "inverse-on-surface": "#eaf1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "section-gap": "120px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface-container/70 backdrop-blur-md border-b border-white/20 shadow-sm transition-all duration-300" id="global-nav">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2 text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity cursor-pointer">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<span class="font-headline-md text-headline-md font-bold hidden md:block">MB Home Health Care</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="h-full flex items-center text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Home</a>
+<a class="h-full flex items-center text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="h-full flex items-center text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About Us</a>
+<a class="h-full flex items-center text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Testimonials</a>
+<a class="h-full flex items-center text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Blog</a>
+<a class="h-full flex items-center text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-secondary transition-colors duration-200 scale-95 active:scale-90 flex items-center gap-2 shadow-md">
+<span>Call Now</span>
+<span class="material-symbols-outlined text-sm">call</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative w-full px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto">
+<div class="relative w-full h-[600px] md:h-[800px] rounded-[32px] overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover z-0" data-alt="A compassionate female nurse in a pristine navy blue uniform warmly interacting with an elderly male patient in a bright, modern living room. The scene is illuminated by soft, natural sunlight streaming through large windows, creating a high-key, optimistic clinical aesthetic. The focus is on trust, professional home care, and genuine human connection. Deep navy and soft sky blue tones dominate the composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnEuw0rJUUKSc3IqYCqd7n4vVUbIPR1F8SyT2put6lAOnRMLgnaerHMDL1H25wpFQGLzCKRJR8ecB0KTyS-EjC-UBgJpWNF0DSOT_1HDpc5367UYVPh26GrPkONMlXJCm9W2G7cPLu__k6_PyezDy35dqGReFDCIh1DdAYYpTfjcmvbztexGyjAwA_lypUUKt62WLSH5TQ3auidW50ZIDXyZ9fH74eo5Az0EkwuzaU82sghf-PwNCO7Q"/>
+<!-- Hero Content overlay -->
+<div class="absolute inset-0 z-20 flex flex-col justify-between p-8 md:p-16">
+<div class="max-w-2xl mt-12 md:mt-24">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white drop-shadow-lg mb-6">Modern Home Care<br/>With Gentle Precision.</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-lg mb-8 drop-shadow-md">Expert clinical care delivered with comfort and trust in your own home. Serving all 83 Michigan counties with Medicare-certified excellence.</p>
+<div class="flex flex-wrap gap-4 mt-8">
+<button class="glass-panel text-white px-6 py-3 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all flex items-center gap-2">
+                                Skilled Nursing
+                            </button>
+<button class="glass-panel text-white px-6 py-3 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all flex items-center gap-2">
+                                Physical Therapy
+                            </button>
+<button class="glass-panel text-white px-6 py-3 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all flex items-center gap-2">
+                                Daily Assistance
+                            </button>
+</div>
+</div>
+<!-- Floating Doctor Card -->
+<div class="self-end glass-panel p-4 rounded-2xl flex items-center gap-4 max-w-sm mb-8 md:mb-0 shadow-[0_10px_30px_rgba(0,32,70,0.15)] hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-white/50">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a mature, confident female doctor or lead nurse wearing a white clinical coat over a navy top. She is smiling warmly against a brightly lit, out-of-focus modern medical office background. The lighting is soft and flattering, emphasizing trust, expertise, and a premium clinical standard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyBAR_eHgEpVFxyPCuo4KXhVV4UtTW03xKpu0NwduI8AexGiJAr8s9sR1AqhzL4A0PNKuqEyCxojb7oN-Qg2FVeSVpq_HGv5lgafqppckvDUoRV2j93q-PrrH1-K3wgKt8Zb9pxYiaM7oecPE9zkV-fowVMY2zviD5lIzvVFmpZcsiw7STgq28S3T7b-GvhPnZ4s7RZT6pB62oXTMNYSbu1YbVpCS_yesBfzEAsjCkhsK3j4JA12Rhmg"/>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-white drop-shadow-sm">Dr. Sarah Jenkins, RN</h3>
+<p class="font-body-md text-body-md text-white/90 text-sm">Clinical Director</p>
+<p class="font-label-md text-label-md text-white/80 text-xs mt-1">15 Years Experience (4.9 Rating)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end mb-16">
+<div class="md:col-span-5">
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4">Our Core Services /</p>
+<h2 class="font-headline-lg text-headline-lg text-primary">Discover Our Signature<br/>Clinical Care</h2>
+</div>
+<div class="md:col-span-5 md:col-start-8">
+<p class="font-body-lg text-body-lg text-on-surface-variant">Experience modern home health care delivered with comfort, precision, and attention to detail. Our team provides a safe, welcoming environment designed to make every recovery stress-free.</p>
+</div>
+</div>
+<!-- Horizontal Scroll Area -->
+<div class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scrollbar">
+<!-- Service Card 1 -->
+<div class="min-w-[280px] md:min-w-[360px] h-[400px] rounded-2xl overflow-hidden relative group snap-start cursor-pointer shadow-[0_10px_30px_rgba(0,32,70,0.05)] hover:shadow-[0_15px_40px_rgba(0,32,70,0.1)] transition-all">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A skilled nurse in a bright, modern home setting carefully checking the blood pressure of a relaxed senior patient. The composition focuses on the medical instruments and the gentle touch of the nurse's hands. The lighting is clean, bright, and optimistic, emphasizing a high-end, professional home care environment. Deep navy and clean white color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJq1ouMSQF2fjtAsqtOlCKJGUL41Qs-l_DPX8ejb_k_sE4eIsRPx5SYCILiV8UnFAdhq7cAkqPxT0FQ1zJ6day6cJqXcpCkJEV6JsiWnvLChgdLqysL-dHNa8D_RL_vVzhSwz2AhtBj-KGMmMi82DBDlsbslqmQi0fgo_2GmKg1A9kYGRP07FTywNl_EbdVHXHdmV0ieTboBWimTXmGFA2goxhkkYeLQBt4TR9d-ba2GYPf5fxIwFbIg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-white">Skilled<br/>Nursing</h3>
+<div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-white">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="min-w-[280px] md:min-w-[360px] h-[400px] rounded-2xl overflow-hidden relative group snap-start cursor-pointer shadow-[0_10px_30px_rgba(0,32,70,0.05)] hover:shadow-[0_15px_40px_rgba(0,32,70,0.1)] transition-all">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A physical therapist assisting an elderly woman with walking exercises in a spacious, sunlit living room. The therapist is wearing a navy uniform and providing supportive guidance. The mood is encouraging and professional, set in a clean, affluent residential interior. The lighting is bright and high-key." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjqSIdMbl-dKWVVsskON1DaNbmxJcVxouhpfz5n0E27p6TyQSBN9heVRPlylQELRbrPv0AzGQ1eGcx3gwqQmf6E-2QLPSzF1kfEaRqNhLe9jRTIyqPjoyygCUd5JoM_PPX17-NAa785nAJwap9JaFNJwxknVnYcEMJeJwg5DPrlHqJQUR7sDnjHduNtWsyAL8ifLkVRi-yHzY5EUFwWgiJdnpJqIsLqwfxBVRbGGw2qXRQIG9NfrCRYQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-white">Physical<br/>Therapy</h3>
+<div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-white">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="min-w-[280px] md:min-w-[360px] h-[400px] rounded-2xl overflow-hidden relative group snap-start cursor-pointer shadow-[0_10px_30px_rgba(0,32,70,0.05)] hover:shadow-[0_15px_40px_rgba(0,32,70,0.1)] transition-all">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An occupational therapist helping a patient perform daily tasks in a beautifully appointed modern kitchen. The focus is on restoring independence through structured activities. The lighting is soft and natural, emphasizing safety, cleanliness, and compassionate care in a high-end home environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhDOFz3MBFr1O9sHIpEN4F1uxLubb0_DerD3FbR9U6Pu_zQRq0zb1ApBl-VwU-8vPg98XMDJafPs_d2isEgvapBWlen1Zr6lj8tRoSnJmz_HUdf9kVK9kuIDYnAeGcTZ9EaUu3kPcpaalEDaPG4RBff5R0HL6-f0fYTwvHFIHOObFiZPzssVMztii9-0Ix5uaUgpwH_cft_jSTVjZ89vT-Zhn7DmcZoYURVukTcIrG2DW42kARPL063A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-white">Occupational<br/>Therapy</h3>
+<div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-white">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<style>
+                .hide-scrollbar::-webkit-scrollbar { display: none; }
+                .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+            </style>
+</section>
+<!-- Trust / Split Layout Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<!-- Left Image Block -->
+<div class="md:col-span-7 relative h-[500px] md:h-[700px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(0,32,70,0.08)]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A dedicated male home care nurse in professional medical scrubs engaging in a detailed consultation with a patient and their family member in a comfortable, modern living room. The atmosphere is serious yet reassuring. The lighting is soft, natural, and high-key, conveying clinical precision, transparency, and a premium healthcare standard. Deep navy and soft white dominant tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALaKC84Z0TaW2ONv_faggFAj0IRi-yXT2aBd2VO9qombnR26858ghU-FNjz1RKgUfdw132U6SO6Hz8sXz3PakjF17o7DlENWU742rxMUoQP1lSuDZGsX7DS9tOfFwHRh2g8kGyYJgYfErp5kE4wtbS3HlpVoVyrTeM6ubBKrEUATsKduUDIncSO-8vTSrpYBONlBvHruay1YjJFNGmW9BwdmyybNnmRd5pG00wmpS29sgFvH8RVVWu0g"/>
+<!-- Floating Stat Badge -->
+<div class="absolute bottom-8 left-8 glass-panel rounded-2xl p-6 shadow-lg flex flex-col gap-2 max-w-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-2xl">verified</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">Medicare</span>
+</div>
+<p class="font-label-md text-label-md text-primary/80">Certified Agency serving all 83 Michigan Counties with distinction.</p>
+</div>
+</div>
+<!-- Right Content Block -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div>
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4">About MB Care /</p>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Excellence In<br/>Home Care With<br/>Compassionate Support</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Discover delighted patient reviews about their comforting and satisfying recovery experiences with our dedicated team of professionals.</p>
+</div>
+<button class="self-start group flex items-center gap-4 bg-surface px-6 py-4 rounded-xl shadow-[0_5px_15px_rgba(0,32,70,0.05)] hover:shadow-[0_10px_25px_rgba(0,32,70,0.1)] transition-all">
+<span class="font-label-md text-label-md text-primary font-bold">Read More</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</button>
+<!-- Trust Indicators Grid -->
+<div class="grid grid-cols-2 gap-6 mt-8 pt-8 border-t border-outline-variant/30">
+<div>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">98%</h4>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-xs">Satisfaction<br/>Rate</p>
+</div>
+<div>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">83</h4>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-xs">Counties<br/>Served</p>
+</div>
+<div>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">4.9</h4>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-xs">Patient<br/>Rating</p>
+</div>
+<div>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">24/7</h4>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-xs">Clinical<br/>Support</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Coverage & Insurance Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-container-max mx-auto rounded-[32px] my-16 shadow-[0_10px_30px_rgba(0,32,70,0.05)]">
+<div class="text-center mb-12">
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4">Coverage &amp; Insurance /</p>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Serving All 83 Michigan Counties</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">We are proud to be a CHAP-accredited, Medicare-certified agency. We accept a wide range of insurance providers to ensure you receive the care you need.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-70">
+<div class="font-headline-md text-headline-md font-bold text-primary text-center">Blue Cross<br/>Blue Shield</div>
+<div class="font-headline-md text-headline-md font-bold text-primary text-center">Medicare</div>
+<div class="font-headline-md text-headline-md font-bold text-primary text-center">Medicare<br/>Advantage</div>
+<div class="font-headline-md text-headline-md font-bold text-primary text-center">Blue Care<br/>Network</div>
+<div class="font-headline-md text-headline-md font-bold text-primary text-center">Auto<br/>Insurance</div>
+<div class="font-headline-md text-headline-md font-bold text-primary text-center">Workers'<br/>Compensation</div>
+</div>
+</section>
+<!-- Our Care Process Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4">How It Works /</p>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Our Care Process</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">We've streamlined our process to ensure you or your loved one receives timely, comprehensive care.</p>
+</div><div class="mb-16 rounded-[32px] overflow-hidden h-[400px] shadow-lg"><img alt="Healthcare coordination team working together" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTbyaWpHhfwPbIyN9XhMQ0n_st2lBp-MTXofcVm-88a5Pmgvp2TuyC80SidSu2krqlrf4LrnKrtOvqO89Hx5czcEROUmEwYbkCC9cNqSHJUjeSmbd64isCmwrwDPH09dSbnDbE5001rKPlSBAHx690Gzq4q76j_pxG02__0F_zi1jE7LIjCw73rw_3BDs1MXghB_kwVxCu0Q_hiadkBwwSt-GZU89J5s5BIemmLgVDhsZ-8q_mSy83Iw"/></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">forum</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">1. Consultation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We discuss your needs and verify insurance eligibility to ensure we're the right fit.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">clinical_notes</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">2. Physician Order</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We coordinate with your doctor to obtain the necessary clinical orders for care.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">checklist</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">3. Care Plan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our clinicians develop a personalized, comprehensive plan tailored to your recovery.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md">
+<span class="material-symbols-outlined text-primary text-3xl">home_health</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">4. Start of Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our dedicated team arrives at your home to begin delivering expert, compassionate care.</p>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-container-max mx-auto rounded-[32px] my-16 shadow-[0_10px_30px_rgba(0,32,70,0.05)]">
+<div class="text-center mb-16">
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4">Testimonials /</p>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Delighted Patient Reviews</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Hear what our patients and their families have to say about the MB Care experience.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"The care my father received after his surgery was exceptional. The nurses were not only skilled but incredibly compassionate. They made a difficult time much easier for our whole family."</p>
+<p class="font-label-md text-label-md text-primary font-bold">- Robert M., Family Member</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"The physical therapy team helped me regain my mobility faster than I ever thought possible. They were encouraging, professional, and always arrived on time. Highly recommend."</p>
+<p class="font-label-md text-label-md text-primary font-bold">- Susan T., Patient</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 italic">"As a discharge planner, I rely on agencies that are responsive and dependable. MB Care always answers the phone and makes the referral process seamless. A true partner."</p>
+<p class="font-label-md text-label-md text-primary font-bold">- David L., Healthcare Professional</p>
+</div>
+</div>
+</section>
+<!-- Final Contact/Callback Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-primary text-white rounded-[32px] p-8 md:p-16 shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-full opacity-20 z-0"><img alt="Professional healthcare consultant" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsAR--_iZoUWqkUsO8awesdl-EeUpOXIni3weaXKn1kWuC35iHZ8pr4X8hG4LOl1msmaXL4Aj3lCXqc2gJJoaUZq_fnrrZQ1-MDDLmkzpYsjTH_LcxIR12Hyb_t-B8RUJQZOmEf5wXj-raBmXCpaseAY2BNYI6cXmkyPl7iIrAaZlj5adQA0WTFX5uJgLTFg1uH69JaotKGghhOEopem6fOeRhJnKDXXpvIxkYzzKgp9rhYCw5nKMLBw"/></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+<div class="relative z-10">
+<p class="font-label-md text-label-md text-primary-fixed tracking-widest uppercase mb-4">Contact Us /</p>
+<h2 class="font-display-lg-mobile md:font-headline-lg text-display-lg-mobile md:text-headline-lg mb-6">Ready to Start?</h2>
+<p class="font-body-lg text-body-lg text-white/90 mb-8">Our dedicated intake team is available 24/7 to assist you. Call us now or request a callback at your convenience.</p>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-white/70 mb-1">24/7 Intake Line</p>
+<a class="font-headline-md text-headline-md hover:text-secondary-fixed transition-colors" href="tel:248-442-7500">248-442-7500</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-white/70 mb-1">Office</p>
+<p class="font-body-md text-body-md">30300 Northwestern Hwy, Suite 220<br/>Farmington Hills, MI 48334</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 bg-white p-8 rounded-2xl text-on-surface shadow-lg">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Request a Callback</h3>
+<form class="flex flex-col gap-4">
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-2" for="name">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="phone" placeholder="(248) 555-0123" type="tel"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-2" for="county">County</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="county" placeholder="e.g. Oakland" type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-6 py-4 rounded-lg font-label-md text-label-md hover:bg-secondary transition-colors duration-200 mt-2 shadow-md w-full" type="button">
+                        Submit Request
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container w-full py-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-headline-md font-headline-md font-bold text-on-primary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                    MB Care
+                </span>
+<p class="font-body-md text-body-md text-on-primary/70 mt-4 max-w-xs">
+                    Clinical Precision &amp; Compassionate Care delivered right to your doorstep.
+                </p>
+<p class="font-body-md text-body-md text-on-primary/70 mt-4 max-w-xs italic text-sm">
+                    MB Home Health Care provides services to patients without discrimination on the basis of race, color, creed, sex, age, religion, disability, or place of origin.
+                </p>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-on-primary mb-2">Company</h4>
+<a class="font-body-md text-body-md text-on-primary/70 hover:text-secondary-container transition-colors" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Careers</a>
+<a class="font-body-md text-body-md text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Services</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-on-primary mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+<div class="md:col-span-1 flex flex-col justify-between">
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="mailto:mbhomecare24@gmail.com">
+<span class="material-symbols-outlined text-on-primary text-sm">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="tel:248-442-7500">
+<span class="material-symbols-outlined text-on-primary text-sm">call</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-on-primary text-sm">fax</span>
+</a>
+</div>
+<p class="font-label-md text-label-md text-on-primary/50 mt-8 md:mt-0">
+                    © 2024 MB Home Health Care.<br/>All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple nav background transition on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('global-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('bg-surface/70', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('bg-surface/95', 'bg-surface/70');
+            }
+        });
+    </script>
+</body></html>
