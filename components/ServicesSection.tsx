@@ -44,18 +44,18 @@ const SERVICES = [
   },
   {
     number: "03",
-    name: "Everyday Living",
+    name: "Aide & Social Work",
     image: "/services/03.webp",
     tint: "150,68,12",
     included: [
-      "Personal care and hygiene",
-      "Meal preparation and nutrition",
-      "Light housekeeping and errands",
-      "Respite cover for family carers",
+      "Bathing, dressing and personal care",
+      "Mobility, transfers and safe movement",
+      "Benefits, Medicaid and paperwork help",
+      "Counselling and community referrals",
     ],
     helps:
-      "The people caring for a parent are usually holding down a job too. This is the part that gives them their evenings back.",
-    outcome: "Families get their time back",
+      "A home health aide handles the hands-on hours a family cannot cover, and a medical social worker untangles the benefits, housing and long-term planning behind them.",
+    outcome: "Practical and financial load lifted",
   },
 ];
 

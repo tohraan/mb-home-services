@@ -64,6 +64,25 @@ const CONTACT_DETAILS = [
     href: "tel:2484427500",
   },
   {
+    icon: "print",
+    label: "Fax",
+    value: "248-442-7590",
+  },
+  {
+    icon: "mail",
+    label: "General enquiries",
+    value: "info@mbhomehealth.com",
+    href: "mailto:info@mbhomehealth.com",
+    compact: true,
+  },
+  {
+    icon: "mail",
+    label: "Admin & billing",
+    value: "admin@mbhomehealth.com",
+    href: "mailto:admin@mbhomehealth.com",
+    compact: true,
+  },
+  {
     icon: "location_on",
     label: "Office",
     value: "30300 Northwestern Hwy, Suite 220, Farmington Hills, MI 48334",
@@ -157,7 +176,9 @@ export default function ContactSection() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="mt-1.5 block font-headline-md text-[19px] font-semibold transition-colors hover:text-secondary-fixed-dim"
+                        className={`mt-1.5 block break-all font-headline-md font-semibold transition-colors hover:text-secondary-fixed-dim ${
+                          item.compact ? "text-[16px]" : "text-[19px]"
+                        }`}
                       >
                         {item.value}
                       </a>

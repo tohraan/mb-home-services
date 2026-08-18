@@ -4,7 +4,7 @@ const COLUMNS = [
     links: [
       { label: "Skilled Nursing", href: "#how-we-help" },
       { label: "Therapy at Home", href: "#how-we-help" },
-      { label: "Everyday Living", href: "#how-we-help" },
+      { label: "Aide & Social Work", href: "#how-we-help" },
       { label: "Our Process", href: "#process" },
     ],
   },
@@ -130,6 +130,34 @@ export default function Footer() {
                 <br />
                 Farmington Hills, MI 48334
               </p>
+
+              <ul className="mt-5 space-y-2 font-body-md text-[15px] leading-relaxed text-white/75">
+                <li>
+                  <a
+                    href="tel:2484427500"
+                    className="transition-colors hover:text-white"
+                  >
+                    Tel: 248-442-7500
+                  </a>
+                </li>
+                <li>Fax: 248-442-7590</li>
+                <li className="break-all">
+                  <a
+                    href="mailto:info@mbhomehealth.com"
+                    className="transition-colors hover:text-white"
+                  >
+                    info@mbhomehealth.com
+                  </a>
+                </li>
+                <li className="break-all">
+                  <a
+                    href="mailto:admin@mbhomehealth.com"
+                    className="transition-colors hover:text-white"
+                  >
+                    admin@mbhomehealth.com
+                  </a>
+                </li>
+              </ul>
             </address>
           </div>
 

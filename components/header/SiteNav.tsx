@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 
 const BRAND_NAME = "MB Home Services";
-const PHONE = "(800) 555-0142";
-const PHONE_HREF = "tel:+18005550142";
+const PHONE = "248-442-7500";
+const PHONE_HREF = "tel:2484427500";
 
 const LINKS = [
   { label: "Home", href: "#header" },
